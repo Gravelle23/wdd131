@@ -1,28 +1,25 @@
-/* Reset some default styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Styling */
 body {
     font-family: "Montserrat", sans-serif;
 }
 
-/* About Me Container */
 .about-me-container {
-    background-color: #f9f9f9; /* Light background */
-    border: 2px solid #00aaff; /* Highlighted border (light blue) */
-    border-radius: 8px; /* Rounded corners */
-    padding: 20px; /* Padding inside container */
-    width: 80%; /* Set a max width */
-    max-width: 900px; /* Optional max width */
-    margin-left: 0; /* Align the container to the left side */
-    margin-right: auto; /* Ensure it's aligned left, but allows the container to grow on the right */
+    background-color: #f9f9f9; 
+    border: 2px solid #00aaff; 
+    border-radius: 8px; 
+    padding: 20px; 
+    width: 80%; 
+    max-width: 900px; 
+    margin-left: 0; 
+    margin-right: auto; 
 }
 
-/* Header Styling */
+
 header {
     background-color: #ddd;
     padding: 1rem;
@@ -31,25 +28,25 @@ header {
     font-size: large;
 }
 
-/* Main Heading */
+
 h1 {
     font-size: 2rem;
     text-align: center;
 }
 
-/* Navigation Styling */
+
 nav {
     background-color: #36454f;
     margin: 0 auto;
     max-width: 800px;
 }
 
-/* Navigation List */
+
 nav ul {
     list-style-type: none;
 }
 
-/* Navigation Links */
+
 nav a {
     display: block;
     color: #fff;
@@ -58,17 +55,17 @@ nav a {
     text-decoration: none;
 }
 
-/* Navigation Hover Effect */
+
 nav a:hover {
     text-decoration: overline;
 }
 
-/* Active Class */
+
 .active {
     color: yellow;
 }
 
-/* Media Query for Navigation Flex */
+
 @media (min-width: 640px) {
     nav ul {
         display: flex;
@@ -79,39 +76,38 @@ nav a:hover {
     }
 }
 
-/* About Me Section Layout */
+
 .about-me {
     display: flex;
     justify-content: left;
     gap: 20px;
-    align-items: center;
+    align-items: flex-start;
 }
 
-/* About Me Content Section */
+
 .about-me-content {
     display: flex;
     gap: 20px;
     align-items: center;
 }
 
-/* About Me Text */
+
 .about-me-text {
     font-size: 1rem;
     line-height: 1.6;
     color: #333;
 }
 
-/* About Me Profile Image */
+
 .profile-image {
     width: 150px; 
     height: 150px;
     object-fit: cover;
-    border-radius: 50%; /* Circular image */
+    border-radius: 50%; 
 }
 
-/* Maryland Section */
 .maryland-section {
-    margin-top: 2rem; /* Space between the "About Me" content and this new section */
+    margin-top: 2rem; 
 }
 
 .maryland-header {
@@ -129,8 +125,8 @@ nav a:hover {
 }
 
 .maryland-flag {
-    width: 150px; /* Set the width of the flag image */
-    height: 100px; /* Set the height to maintain proportion */
+    width: 150px; 
+    height: 100px; 
     object-fit: cover;
     border-radius: 5px;
 }
@@ -139,11 +135,10 @@ nav a:hover {
     font-size: 1rem;
     line-height: 1.6;
     color: #333;
-    max-width: 600px; /* Limit the width of the text */
+    max-width: 600px; 
     text-align: left;
 }
 
-/* Footer Styling */
 footer {
     background-color: #333;
     color: white;
@@ -156,4 +151,55 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+
+.web-dev-resources {
+    margin-left: 20px;
+    width: 30%; 
+}
+
+.web-dev-resources-container {
+    background-color: #f9f9f9;
+    border: 2px solid #00aaff;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.web-dev-resources-heading {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.web-dev-links {
+    list-style-type: none;
+}
+
+.web-dev-links li {
+    margin: 0.5rem 0;
+}
+
+.web-dev-links a {
+    text-decoration: none;
+    color: #007acc;
+    font-size: 1.1rem;
+}
+
+.web-dev-links a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    main {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .about-me, .web-dev-resources {
+        width: 48%;
+    }
 }
