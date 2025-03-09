@@ -3,83 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to Whitewater Rafting Adventures. Explore thrilling rafting trips, expert guides, and unforgettable experiences.">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals by Aaron Gravelle. Learn the essentials of dynamic web design, including HTML, CSS, JavaScript, and responsive design techniques.">
     <meta name="author" content="Aaron Gravelle">
-    <title>Home | Whitewater Rafting Adventures</title>
+    <title>WDD 131: Dynamic Web Fundamentals - Aaron P. Gravelle</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="images/logo.jpg" alt="Whitewater Rafting Logo">
-        </div>
+        <p>
+            WDD 131: Dynamic Web Fundamentals - Aaron P. Gravelle
+        </p>
+
         <nav>
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://www.linkedin.com/jobs?src=go-pa&trk=sem-ga_campid.18853522261_asid.146084015209_crid.633923221414_kw.linkedin_d.c_tid.kwd-296170574619_n.g_mt.e_geo.9007680&mcid=6994434350142418944&cid=&gad_source=1&gclsrc=aw.ds">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a></li>
+                <li><a href="wdd131/Final Project">Final Project</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <div class="hero">
-            <img class="hero-image" src="images/hero-image.jpg" alt="Whitewater Rafting">
-            <h1 class="hero-heading">Whitewater Rafting Adventures</h1>
-        </div>
-
-        <section class="newsletter">
-            <h2>Join Our Adventure Newsletter</h2>
-            <form action="#" method="post">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <button type="submit">Sign Up</button>
-            </form>
-        </section>
-
-        <div class="cta-container">
-            <a href="trips.html" class="cta-button">Explore Our Trips</a>
-        </div>
-
-        <section class="grid-layout">
-            <div class="grid-item">
-                <img src="images/adventure1.jpg" alt="Exciting Rafting">
-                <h3>Thrilling Rapids</h3>
-                <p>Feel the rush as you navigate some of the most exciting rapids in the world!</p>
-            </div>
-            <div class="grid-item">
-                <img src="images/adventure2.jpg" alt="Guided Tours">
-                <h3>Expert Guides</h3>
-                <p>Our experienced guides ensure a safe and thrilling adventure for all skill levels.</p>
-            </div>
-            <div class="grid-item">
-                <img src="images/adventure3.jpg" alt="Breathtaking Views">
-                <h3>Breathtaking Views</h3>
-                <p>Experience natures beauty with panoramic views during your rafting adventure.</p>
+        <section class="about-me">
+            <div class="about-me-container">
+                <h1 class="about-me-heading">About Me</h1>
+                <div class="about-me-content">
+                    <p class="about-me-text">Hello! I'm Aaron Gravelle, a web development enthusiast with a passion for learning and building dynamic websites. I enjoy creating visually appealing and interactive experiences using HTML, CSS, and JavaScript.</p>
+                    <img class="profile-image" src="images/profile.jpg" alt="Profile Picture">
+                </div>
+    
+                <!-- New Maryland Section -->
+                <section class="maryland-section">
+                    <h2 class="maryland-header">Maryland, USA</h2>
+                    <div class="maryland-content">
+                        <img class="maryland-flag" src="images/flag.jpg" alt="Maryland Flag">
+                        <p class="maryland-facts">
+                            Maryland is known for its beautiful Chesapeake Bay and the historic city of Annapolis. It’s also famous for its blue crabs, which are a local delicacy. Did you know that Maryland is the birthplace of the national anthem, "The Star-Spangled Banner"? The state is also home to the United States Naval Academy and the National Aquarium.
+                        </p>
+                    </div>
+                </section>
             </div>
         </section>
-        
     </main>
-
+    
     <footer>
-        <p>Contact: info@whitewaterrafting.com | Follow us on social media</p>
-        <p>&copy; 2025 Whitewater Rafting Adventures | Created by Aaron Gravelle</p>
-
-        <nav class="sociallinks">
-            <a href="https://facebook.com">
-                <img src="images/facebook.svg" alt="Facebook">
-            </a>
-            <a href="https://twitter.com">
-                <img src="images/twitter.svg" alt="Twitter">
-            </a>
-            <a href="https://instagram.com">
-                <img src="images/instagram.svg" alt="Instagram">
-            </a>
-        </nav>
+        <p>&copy; <span id="currentyear"></span> Aaron Preston Gravelle, USA</p>
+        <p id="lastModified">Last modified: </p>
     </footer>
+
+    <script src="scripts/getdates.js" defer></script>
+
 </body>
 </html>
