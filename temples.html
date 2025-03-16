@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals by Aaron Gravelle. Learn about Aaron, a sales lead from Maryland, USA, his interests in web design, and his favorite resources for web development. Explore insights about Maryland, including local history, attractions, and culture."/>
+    <meta name="author" content="Aaron Gravelle">
+    <title>WDD 131-Temple Album-Aaron P. Gravelle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="temple.html" class="active">Home</a></li>
+                <li><a href="old.html">Old</a></li>
+                <li><a href="new.html">New</a></li>
+                <li><a href="large.html">Large</a></li>
+                <li><a href="small.html">Small</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger-icon">
+                &#9776; 
+            </div>
+            <div class="popup-menu" id="popup-menu">
+                <div class="close-menu" id="close-menu">X</div>
+                <ul>
+                    <li><a href="temple.html" class="active">Home</a></li>
+                    <li><a href="old.html">Old</a></li>
+                    <li><a href="new.html">New</a></li>
+                    <li><a href="large.html">Large</a></li>
+                    <li><a href="small.html">Small</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="temples">
+            <h2 class="temple-title">Home</h2>
+            <div class="temple-grid">
+                <div class="temple-item">
+                    <img src="images/temple1.jpg" alt="Adelaide Australia Temple">
+                    <p>Adelaide Australia Temple</p>
+                </div>
+                <div class="temple-item">
+                    <img src="images/temple2.jpg" alt="Aba Nigeria Temple">
+                    <p>Aba Nigeria Temple</p>
+                </div>
+                <div class="temple-item">
+                    <img src="images/temple3.jpg" alt="Arequipa Peru Temple">
+                    <p>Arequipa Peru Temple</p>
+                </div>
+                <div class="temple-item">
+                    <img src="images/temple4.jpg" alt="Apia Samoa Temple">
+                    <p>Apia Samoa Temple</p>
+                </div>
+                <div class="temple-item">
+                    <img src="images/temple5.jpg" alt="Atlanta Georgia Temple">
+                    <p>Atlanta Georgia Temple</p>
+                </div>
+                <div class="temple-item">
+                    <img src="images/temple6.jpg" alt="Belem Brazil Temple">
+                    <p>Belem Brazil Temple</p>
+                </div>
+                <div class="temple-item">
+                    <img src="images/temple7.jpg" alt="Bern Switzerland Temple">
+                    <p>Bern Switzerland Temple</p>
+                </div>
+                <div class="temple-item">
+                    <img src="images/temple8.jpg" alt="Billings Montana Temple">
+                    <p>Billings Montana Temple</p>
+                </div>
+                <div class="temple-item">
+                    <img src="images/temple9.jpg" alt="Bountiful Utah Temple">
+                    <p>Bountiful Utah Temple</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 | Aaron P. Gravelle | USA</p>
+        <p id="lastModified">Last modified: </p>
+    </footer>
+    <script src="scripts/temples.js"></script>
+</body>
+</html>

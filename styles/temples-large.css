@@ -1,0 +1,21 @@
+@media (min-width:768px) {
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap:20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap:25px;
+    }
+
+    .temple-item img {
+        max-height:400px;
+    }
+
+    .temple-item p {
+        font-size:18px;
+    }
+}
