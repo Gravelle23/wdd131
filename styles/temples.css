@@ -96,8 +96,6 @@ nav ul li a.active {
     right: 10px;
 }
 
-
-
 .temples {
     padding: 20px;
     margin-top: 80px;
@@ -124,19 +122,24 @@ nav ul li a.active {
     text-align: center;
 }
 
+.temple-item figure {
+    text-align: center;
+    margin: 0;
+}
+
+.temple-item figcaption {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    background-color: #fff; 
+}
+
 .temple-item img {
     width: 100%;
     height: auto;
     display: block;
 }
-
-.temple-item p {
-    padding: 10px;
-    font-size: 15px;
-    font-weight: bold;
-    margin: 0;
-}
-
 
 footer {
     background-color: #2c3e50;
