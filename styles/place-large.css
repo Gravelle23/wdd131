@@ -31,10 +31,10 @@
     transform: translateY(-50%); 
     width: 18%; 
     padding: 10px; 
-    background-color: rgba(255, 255, 255, 0.7); /* Lightened white background for readability */
+    background-color: rgba(255, 255, 255, 0.7); 
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: var(--text-color); /* Dark grey text */
+    color: var(--text-color); 
     font-size: 0.8rem; 
 }
 
@@ -54,10 +54,10 @@
 }
 
 .data li strong {
-    color: var(--primary-color); /* Red emphasis */
+    color: var(--primary-color); 
 }
 
-/* Weather Section */
+
 .weather {
     position: absolute;
     right: 0; 
@@ -65,10 +65,10 @@
     transform: translateY(-50%); 
     width: 18%; 
     padding: 10px; 
-    background-color: rgba(255, 255, 255, 0.7); /* Lightened white background for readability */
+    background-color: rgba(255, 255, 255, 0.7); 
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: var(--text-color); /* Dark grey text */
+    color: var(--text-color); 
     font-size: 0.8rem; 
 }
 
@@ -81,21 +81,21 @@
     font-size: 1em; 
 }
 
-/* Header */
+
 header {
     padding: 60px;
 }
 
 header h1 {
     font-size: 3.5em; 
-    color: var(--primary-color); /* Red header text */
+    color: var(--primary-color); 
 }
 
-/* Footer */
+
 footer {
     padding: 30px;
     font-size: 1.4em; 
-    color: var(--primary-color); /* Red footer text */
+    color: var(--primary-color); 
 }
 
 @media screen and (max-width: 768px) {
@@ -108,7 +108,7 @@ footer {
         margin-bottom: 30px; 
         padding: 10px; 
         font-size: 0.8rem; 
-        color: var(--text-color); /* Ensure text color is consistent */
+        color: var(--text-color); 
     }
 
     .data h2, .weather h2 {
