@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #B22222; /* Firebrick red */
-    --background-color: #ffffff; /* White background */
-    --text-color: #333333; /* Dark grey text */
+    --primary-color: #B22222; 
+    --background-color: #ffffff;
+    --text-color: #333333; 
     --font-family-main: 'Montserrat', sans-serif;
     --font-family-secondary: 'Nunito Sans', sans-serif;
 }
@@ -23,7 +23,7 @@
     z-index: -1; 
 }
 
-/* Data Section */
+
 .data {
     position: absolute;
     left: 0; 
@@ -84,18 +84,25 @@
 
 header {
     padding: 60px;
+    background-color: var(--primary-color); 
+    color: #ffffff; 
 }
 
 header h1 {
     font-size: 3.5em; 
-    color: var(--primary-color); 
+    color: #ffffff; 
 }
 
 
 footer {
     padding: 30px;
     font-size: 1.4em; 
-    color: var(--primary-color); 
+    background-color: var(--primary-color); 
+    color: #ffffff; 
+}
+
+footer p {
+    margin: 10px 0;
 }
 
 @media screen and (max-width: 768px) {
