@@ -1,3 +1,11 @@
+:root {
+    --primary-color: #B22222; /* Firebrick red */
+    --background-color: #ffffff; /* White background */
+    --text-color: #333333; /* Dark grey text */
+    --font-family-main: 'Montserrat', sans-serif;
+    --font-family-secondary: 'Nunito Sans', sans-serif;
+}
+
 .hero {
     position: relative;
     height: calc(100vh - 120px); 
@@ -15,7 +23,7 @@
     z-index: -1; 
 }
 
-
+/* Data Section */
 .data {
     position: absolute;
     left: 0; 
@@ -23,10 +31,10 @@
     transform: translateY(-50%); 
     width: 18%; 
     padding: 10px; 
-    background-color: rgba(255, 255, 255, 0.7); 
+    background-color: rgba(255, 255, 255, 0.7); /* Lightened white background for readability */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: #333;
+    color: var(--text-color); /* Dark grey text */
     font-size: 0.8rem; 
 }
 
@@ -46,10 +54,10 @@
 }
 
 .data li strong {
-    color: var(--primary-color);
+    color: var(--primary-color); /* Red emphasis */
 }
 
-
+/* Weather Section */
 .weather {
     position: absolute;
     right: 0; 
@@ -57,10 +65,10 @@
     transform: translateY(-50%); 
     width: 18%; 
     padding: 10px; 
-    background-color: rgba(255, 255, 255, 0.7); 
+    background-color: rgba(255, 255, 255, 0.7); /* Lightened white background for readability */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: #333;
+    color: var(--text-color); /* Dark grey text */
     font-size: 0.8rem; 
 }
 
@@ -73,29 +81,34 @@
     font-size: 1em; 
 }
 
+/* Header */
 header {
     padding: 60px;
 }
 
 header h1 {
     font-size: 3.5em; 
+    color: var(--primary-color); /* Red header text */
 }
 
-
+/* Footer */
 footer {
     padding: 30px;
     font-size: 1.4em; 
+    color: var(--primary-color); /* Red footer text */
 }
 
-
 @media screen and (max-width: 768px) {
-
+    #weather-icon {
+        display: block;   
+    }
     .data, .weather {
         position: relative; 
         width: 100%; 
         margin-bottom: 30px; 
         padding: 10px; 
         font-size: 0.8rem; 
+        color: var(--text-color); /* Ensure text color is consistent */
     }
 
     .data h2, .weather h2 {
@@ -111,8 +124,16 @@ footer {
     }
 }
 
+@media screen and (min-width: 769px) {
+    #weather-icon {
+        display: none;   
+    }
+}
 
 @media screen and (min-width: 1025px) {
+    .weather h2::after {
+        content: ' 🌤';  
+    }
     .data ul {
         font-size: 1em; 
     }
