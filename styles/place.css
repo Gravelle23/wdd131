@@ -122,6 +122,13 @@ body {
     color: var(--primary-color);
 }
 
+#weather-icon {
+    width: 30px; 
+    height: auto; 
+    vertical-align: middle; 
+    margin-right: 10px; 
+}
+
 footer {
     background-color: var(--primary-color);
     color: white;
