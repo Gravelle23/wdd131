@@ -1,0 +1,24 @@
+/* Color Schema */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+h1, h2 {
+    color: #2C3E50; /* Dark blue for headings */
+}
+h3 {
+    color: #E74C3C; /* Red for subheadings */
+}
+.section-title {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+.content {
+    margin-bottom: 30px;
+}
+.wireframe {
+    background-color: #D5DBDB;
+    padding: 10px;
+    margin-top: 20px;
+}
