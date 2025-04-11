@@ -1,23 +1,246 @@
+/* General Resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #f4f4f4; /* Neutral background color */
+    color: #000; /* Set text color to black */
+    padding: 0 20px;
+    min-height: 100vh; /* Ensure body height takes up the whole screen */
 }
-h1, h2 {
-    color: #2C3E50; 
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid #000;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #f4f4f4; /* Matching background color */
 }
-h3 {
-    color: #E74C3C; 
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
 }
-.section-title {
-    font-size: 1.5em;
-    margin-top: 20px;
+
+.title {
+  font-size: 1.2rem;
+  margin-left: 20px;
+  color: #000; /* Black text */
 }
-.content {
-    margin-bottom: 30px;
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
 }
-.wireframe {
-    background-color: #D5DBDB;
+
+nav a {
+  text-decoration: none;
+  padding: 6px 10px;
+  background-color: #f4f4f4; /* Matching background color */
+  border: 1px solid #000;
+  color: #000; /* Black text */
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #3498db; /* Blue background on hover */
+  color: #fff; /* White text on hover */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f4f4f4; /* Matching background color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    padding: 0 20px; /* Optional: add some horizontal padding */
+}
+
+.welcome-msg {
+  background-color: #f4f4f4; /* Matching background color */
+  padding: 6px 12px;
+  border: 1px solid #000;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000; /* Black text */
+}
+
+.hero-img {
+    max-height: 500px; /* Control the maximum height */
+    overflow: hidden;  /* Hide any part of the image that overflows */
+}
+
+.hero-img img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain the aspect ratio */
+    max-width: 100%; /* Ensure the image doesn't overflow */
+    display: block; /* Remove space below the image */
+}
+
+/* Main Content */
+.intro {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #000;
+  background-color: #f4f4f4; /* Matching background color */
+}
+
+.intro p {
+  margin-bottom: 10px;
+  font-style: italic;
+  color: #000; /* Black text */
+}
+
+.intro button {
+  padding: 10px 20px;
+  background-color: #3498db; /* Blue background */
+  color: #fff; /* White text */
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.intro button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+.content-box {
+  border: 1px solid #000;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #f4f4f4; /* Matching background color */
+}
+
+.content-box h2 {
+  color: #3498db; /* Blue headings */
+  font-size: 1.2em;
+  margin-bottom: 8px;
+}
+
+.content-box p {
+  line-height: 1.5;
+  color: #000; /* Black text */
+}
+
+/* Footer */
+footer {
+  border: 1px solid #000;
+  background-color: #f4f4f4; /* Matching background color */
+  padding: 15px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+footer span {
+  font-weight: bold;
+  color: #3498db; /* Blue text */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .hero {
+    height: 200px;
+    margin-top: 160px;
+  }
+
+  .hero-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .content-box {
     padding: 10px;
-    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .intro button {
+    width: 100%;
+  }
+}
+
+/* Hamburger Button */
+#hamburgerBtn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    #hamburgerBtn {
+      display: block;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+
+    nav {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    nav.show {
+      display: flex;
+    }
+
+    nav a {
+      padding: 10px;
+      border-top: 1px solid #ccc;
+      background-color: #f4f4f4; /* Matching background color */
+    }
+
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .title {
+      margin-left: 0;
+      margin-top: 10px;
+    }
 }

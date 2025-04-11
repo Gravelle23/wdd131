@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Community forum for crabbers in Southern Maryland."/>
+  <meta name="author" content="Aaron Gravelle">
+  <title>Community Forum | Southern Maryland Crabbing</title>
+  <link rel="stylesheet" href="styles/siteplan.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="Southern Maryland Crabbing Logo">
+    </div>
+    <div class="title">Southern Maryland Crabbing</div>
+    <nav>
+      <a href="siteplan.html">Home</a>
+      <a href="locations.html">Crabbing Locations</a>
+      <a href="tips.html">Tips & Techniques</a>
+      <a href="forum.html">Community Forum</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="content-box">
+      <h1>Community Forum</h1>
+      <p>Connect with local crabbers, ask questions, and share your stories!</p>
+    </section>
+
+    <section class="content-box">
+      <h2>Latest Discussions</h2>
+      <ul>
+        <li><strong><a href="#">Best bait for blue crabs in April?</a></strong> – Started by MikeC</li>
+        <li><strong><a href="#">Trotline vs traps: Which one do you prefer?</a></strong> – Started by CrabQueen</li>
+        <li><strong><a href="#">Great spots near Point Lookout?</a></strong> – Started by FishinDad</li>
+      </ul>
+    </section>
+
+    <section class="content-box">
+      <h2>Start a New Topic</h2>
+      <form action="#" method="post">
+        <label for="username">Your Name:</label><br />
+        <input type="text" id="username" name="username" required><br /><br />
+
+        <label for="topic">Topic Title:</label><br />
+        <input type="text" id="topic" name="topic" required><br /><br />
+
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+
+        <button type="submit">Post</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Aaron Preston Gravelle, USA</p>
+    <p id="lastModified">Last modified: </p>
+  </footer>
+
+  <script src="scripts/siteplan.js" defer></script>
+</body>
+</html>

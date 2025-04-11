@@ -1,87 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 131 - "/>
-    <meta name="author" content="Aaron Gravelle">
-    <title>WDD 131-Southern Matyland Crabbing-Aaron P. Gravelle</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/siteplan.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Southern Maryland Crabbing - Your guide to crabbing locations, tips, and community.">
+  <meta name="author" content="Aaron Gravelle">
+  <title>Southern Maryland Crabbing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/siteplan.css" />
 </head>
 <body>
-    <header>
-        <h1>Southern-MD-Crabbing.com - Website Planning Document</h1>
-    </header>
 
-    <section id="site-name">
-        <h2 class="section-title">Site Name</h2>
-        <p class="content">
-            Site Name: <strong>Southern-MD-Crabbing.com</strong><br>
-            This name is chosen to represent a site dedicated to crabbing in the Southern Maryland region. It's location-specific, ensuring the target audience can easily find information related to crabbing in this area.<br>
-            Optional domain availability: <strong>southern-md-crabbing.com</strong>
-        </p>
-    </section>
+  <header>
+    <div class="logo">
+        <img src="images/logo.png" alt="Southern Maryland Crabbing Logo">
+    </div>
+    <div class="title">Southern Maryland Crabbing</div>
+    <button id="hamburgerBtn" aria-label="Toggle navigation">&#9776;</button>
+    <nav id="mainNav">
+      <a href="siteplan.html">Home</a>
+      <a href="locations.html">Crabbing Locations</a>
+      <a href="tips.html">Tips & Techniques</a>
+      <a href="forum.html">Community Forum</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
 
-    <section id="site-purpose">
-        <h2 class="section-title">Site Purpose</h2>
-        <p class="content">
-            The website will provide visitors and/or residents of Southern Maryland with information on the best crabbing spots, tips for a successful crabbing experience, seasonal schedules, equipment recommendations, and local regulations. The site will also feature a community forum for crabbing enthusiasts to share experiences and tips.
-        </p>
-    </section>
+  <section class="hero">
+    <div class="welcome-msg">Welcome to Southern Maryland Crabbing</div>
+    <div class="hero-img">
+        <img src="images/hero-img.png" alt="Blue Crab on Dock" loading="lazy">
+    </div>
+  </section>
 
-    <section id="scenarios">
-        <h2 class="section-title">Scenarios</h2>
-        <div class="content">
-            <h3>Scenario 1:</h3>
-            <p>Where are the best crabbing locations in Southern Maryland?</p>
-            <h3>Scenario 2:</h3>
-            <p>What kind of equipment do I need for crabbing in the Chesapeake Bay?</p>
-        </div>
-    </section>
+  <section class="intro">
+    <p>"Your go-to resource for crabbing in Southern Maryland"</p>
+    <button onclick="window.location.href='locations.html'">Explore Crabbing Locations</button>
+  </section>
 
-    <section id="color-schema">
-        <h2 class="section-title">Color Schema</h2>
-        <p class="content">
-            Primary Color: <strong>#2C3E50</strong> (Dark Blue) - Used for headings and titles to give a maritime feel.<br>
-            Secondary Color: <strong>#E74C3C</strong> (Crab Red) - Used for accents, links, and important buttons to bring a lively contrast.<br>
-            Background Color: <strong>#f4f4f4</strong> (Light Gray) - Used as the overall background to keep the site light and easy to read.
-        </p>
-    </section>
+  <section class="content-box">
+    <h2>Crabbing Locations</h2>
+    <p><strong>Best Crabbing Spots in Southern Maryland</strong><br/>
+      Discover the best places to crab in the region.<br/>
+      <a href="locations.html">Go to Crabbing Locations</a>
+    </p>
+  </section>
 
-    <section id="typography">
-        <h2 class="section-title">Typography</h2>
-        <p class="content">
-            <strong>Font 1: Montserrat</strong> - Used for headings and titles to create a modern, bold feel.<br>
-            <strong>Font 2: Nunito Sans</strong> - Used for body text and paragraphs to ensure legibility and readability.
-        </p>
-    </section>
+  <section class="content-box">
+    <h2>Tips & Techniques</h2>
+    <p><strong>Tips & Techniques for a Successful Crabbing Experience</strong><br/>
+      Learn how to crab like a pro with these helpful tips.<br/>
+      <a href="tips.html">Go to Tips & Techniques</a>
+    </p>
+  </section>
 
-    <section id="wireframe">
-        <h2 class="section-title">Wireframe</h2>
-        <div class="wireframe">
-            <p><strong>Mobile View:</strong></p>
-            <ul>
-                <li>Header with logo and menu icon for easy navigation</li>
-                <li>Hero section with a photo of crabbing on the Chesapeake Bay</li>
-                <li>Main content with top tips for crabbing and seasonal information</li>
-                <li>Footer with contact information and social media links</li>
-            </ul>
+  <section class="content-box">
+    <h2>Community Forum</h2>
+    <p><strong>Join the Crabbing Community</strong><br/>
+      Share your stories and get advice from fellow crabbers.<br/>
+      <a href="forum.html">Go to Community Forum</a>
+    </p>
+  </section>
 
-            <p><strong>Desktop View:</strong></p>
-            <ul>
-                <li>Header with logo, navigation bar, and a search option</li>
-                <li>Sidebar with upcoming events, local news, and weather reports for crabbing</li>
-                <li>Main content section with detailed crabbing guides, equipment reviews, and interactive maps</li>
-                <li>Footer with a map of crabbing areas, contact details, and a forum link</li>
-            </ul>
-            
-            <p>To view the full wireframe, click the link below:</p>
-            <a href="https://app.moqups.com/unsaved/15418fb9/edit/page/ad64222d5" target="_blank">Wireframe</a>
-        </div>
-    </section>
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Aaron Preston Gravelle, USA</p>
+    <p id="lastModified">Last modified: </p>
+  </footer>
 
+  <script src="scripts/siteplan.js" defer></script>
 </body>
 </html>
