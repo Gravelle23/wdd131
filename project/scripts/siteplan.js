@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const lastModified = document.getElementById("lastModified");
     lastModified.textContent = `Last modified: ${document.lastModified}`;
   
-    // Optional enhancement: Smooth scroll to top button (example of interactivity)
+    // Smooth scroll to top button 
     const scrollBtn = document.createElement("button");
     scrollBtn.textContent = "⬆ Top";
     scrollBtn.setAttribute("id", "scrollToTopBtn");
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
   });
-  
+
   // Hamburger menu toggle
   const hamburgerBtn = document.getElementById("hamburgerBtn");
   const mainNav = document.getElementById("mainNav");
