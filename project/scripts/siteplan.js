@@ -1,14 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Dynamically set current year
+
     const yearSpan = document.getElementById("currentyear");
     const now = new Date();
     yearSpan.textContent = now.getFullYear();
   
-    // Dynamically set last modified date
     const lastModified = document.getElementById("lastModified");
     lastModified.textContent = `Last modified: ${document.lastModified}`;
   
-    // Smooth scroll to top button 
     const scrollBtn = document.createElement("button");
     scrollBtn.textContent = "⬆ Top";
     scrollBtn.setAttribute("id", "scrollToTopBtn");
@@ -40,7 +38,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Hamburger menu toggle
   const hamburgerBtn = document.getElementById("hamburgerBtn");
   const mainNav = document.getElementById("mainNav");
 
